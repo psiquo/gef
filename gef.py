@@ -6772,7 +6772,7 @@ class ShellcodeGetCommand(GenericCommand):
     _aliases_ = ["sc-get",]
 
     api_base = "http://shell-storm.org"
-    get_url = f"{api_base}/shellcode/files/shellcode-{{:d}}.php"
+    get_url = f"{api_base}/shellcode/files/shellcode-{{:d}}.html"
 
     def do_invoke(self, argv: List[str]) -> None:
         if len(argv) != 1:
